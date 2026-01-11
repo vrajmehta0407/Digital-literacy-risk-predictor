@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Safe Senior</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="dashboard_title">Dashboard</string>
+    <string name="welcome_message">Welcome Back!</string>
+    <string name="protection_active">🔒 100% Offline Protection Active</string>
+    <string name="this_week_protection">📊 This Week\'s Protection</string>
+    <string name="scams_blocked">Scams Blocked</string>
+    <string name="calls_protected">Calls Protected</string>
+    <string name="quick_actions">⚡ Quick Actions</string>
+    <string name="emergency_call">Emergency Call</string>
+    <string name="call_guardian_instantly">Call your guardian instantly</string>
+    <string name="daily_safety_tip">Today\'s Safety Tip</string>
+    <string name="view_reports">View Reports</string>
+    <string name="see_protection_history">See your protection history</string>
+</resources>

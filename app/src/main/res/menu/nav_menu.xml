@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <!-- Dashboard -->
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title="🏠 Dashboard" />
+
+        <!-- Premium Features -->
+        <item
+            android:id="@+id/nav_premium"
+            android:icon="@android:drawable/btn_star_big_on"
+            android:title="⭐ Premium Features" />
+
+        <!-- Chat Assistant -->
+        <item
+            android:id="@+id/nav_chatbot"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="💬 Chat Assistant" />
+
+        <!-- Protection Status -->
+        <item
+            android:id="@+id/nav_protection"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="🛡️ Protection Status" />
+
+        <!-- Messages -->
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="💬 Scanned Messages" />
+
+        <!-- Calls -->
+        <item
+            android:id="@+id/nav_calls"
+            android:icon="@android:drawable/ic_menu_call"
+            android:title="📞 Call History" />
+
+    </group>
+
+    <group android:id="@+id/group_safety">
+        <item android:title="Safety Features">
+            <menu>
+
+                <!-- Daily Tips -->
+                <item
+                    android:id="@+id/nav_daily_tips"
+                    android:icon="@android:drawable/ic_menu_compass"
+                    android:title="💡 Daily Safety Tips" />
+
+                <!-- Guardian -->
+                <item
+                    android:id="@+id/nav_guardian"
+                    android:icon="@android:drawable/ic_menu_myplaces"
+                    android:title="👨‍👩‍👧 Guardian Settings" />
+
+                <!-- Emergency -->
+                <item
+                    android:id="@+id/nav_emergency"
+                    android:icon="@android:drawable/ic_menu_help"
+                    android:title="🚨 Emergency Call" />
+
+            </menu>
+        </item>
+    </group>
+
+    <group android:id="@+id/group_settings">
+        <item android:title="Settings">
+            <menu>
+
+                <!-- Language -->
+                <item
+                    android:id="@+id/nav_language"
+                    android:icon="@android:drawable/ic_menu_edit"
+                    android:title="🌐 Language" />
+
+                <!-- Voice Settings -->
+                <item
+                    android:id="@+id/nav_voice"
+                    android:icon="@android:drawable/ic_btn_speak_now"
+                    android:title="🔊 Voice Settings" />
+
+                <!-- Privacy -->
+                <item
+                    android:id="@+id/nav_privacy"
+                    android:icon="@android:drawable/ic_menu_view"
+                    android:title="🔒 Privacy &amp; Security" />
+
+                <!-- Settings -->
+                <item
+                    android:id="@+id/nav_settings"
+                    android:icon="@android:drawable/ic_menu_preferences"
+                    android:title="⚙️ Settings" />
+
+            </menu>
+        </item>
+    </group>
+
+    <group android:id="@+id/group_help">
+        <item android:title="Help &amp; Support">
+            <menu>
+
+                <!-- Tutorial -->
+                <item
+                    android:id="@+id/nav_tutorial"
+                    android:icon="@android:drawable/ic_menu_slideshow"
+                    android:title="📚 Tutorial" />
+
+                <!-- Help -->
+                <item
+                    android:id="@+id/nav_help"
+                    android:icon="@android:drawable/ic_menu_help"
+                    android:title="❓ Help &amp; FAQ" />
+
+                <!-- About -->
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@android:drawable/ic_menu_info_details"
+                    android:title="ℹ️ About" />
+
+            </menu>
+        </item>
+    </group>
+
+</menu>

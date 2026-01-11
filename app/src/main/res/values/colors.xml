@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Navigation Item Colors -->
+    <color name="nav_item_color">#2C3E50</color>
+    <color name="nav_item_selected">#667eea</color>
+    
+    <!-- Primary Colors -->
+    <color name="primary_purple">#667eea</color>
+    <color name="primary_blue">#4facfe</color>
+    <color name="primary_green">#4CAF50</color>
+    
+    <!-- Background Colors -->
+    <color name="background_light">#F5F7FA</color>
+    <color name="card_background">#FFFFFF</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#2C3E50</color>
+    <color name="text_secondary">#7F8C8D</color>
+    <color name="text_white">#FFFFFF</color>
+    
+    <!-- Status Colors -->
+    <color name="status_safe">#4CAF50</color>
+    <color name="status_warning">#FF9800</color>
+    <color name="status_danger">#F44336</color>
+</resources>
