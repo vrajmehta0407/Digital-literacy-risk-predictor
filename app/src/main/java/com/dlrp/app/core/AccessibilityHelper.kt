@@ -10,6 +10,7 @@ object AccessibilityHelper {
         return am.isEnabled && am.isTouchExplorationEnabled
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun announceForAccessibility(context: Context, text: String) {
         // This would interface with Accessibility events if needed
         // For now, relies on VoiceAlertManager

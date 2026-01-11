@@ -1,7 +1,6 @@
 package com.dlrp.app.ui
 
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.TextView
@@ -9,14 +8,12 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import androidx.cardview.widget.CardView
+import androidx.core.net.toUri
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.dlrp.app.R
-import com.dlrp.app.core.AppInitializer
 import com.dlrp.app.guardian.GuardianPreferences
 import com.dlrp.app.storage.EventLogStore
-import com.dlrp.app.voice.DailySafetyReminder
 import com.google.android.material.navigation.NavigationView
 
 /**
@@ -121,7 +118,7 @@ class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
                     )
                     .setPositiveButton("Open Settings") { _, _ ->
                         val intent = Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
-                        intent.data = android.net.Uri.parse("package:$packageName")
+                        intent.data = "package:$packageName".toUri()
                         startActivity(intent)
                     }
                     .setNegativeButton("OK", null)
@@ -209,8 +206,8 @@ class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         val blockedMessages = blockedStore.getBlockedMessages().size
         val blockedCalls = blockedStore.getBlockedCalls().size
         
-        tvScamsBlocked.text = "$blockedMessages Scams Blocked"
-        tvCallsProtected.text = "$blockedCalls Calls Protected"
+        tvScamsBlocked.text = getString(R.string.scams_blocked, blockedMessages)
+        tvCallsProtected.text = getString(R.string.calls_protected, blockedCalls)
     }
     
     private fun loadDailyTip() {
@@ -240,7 +237,7 @@ class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
             
             // Initiate phone call
             val callIntent = Intent(Intent.ACTION_DIAL).apply {
-                data = Uri.parse("tel:$guardianPhone")
+                data = "tel:$guardianPhone".toUri()
             }
             startActivity(callIntent)
         } else {
@@ -344,6 +341,7 @@ class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
             .show()
     }
     
+    @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START)

@@ -167,7 +167,7 @@ class UserManager(context: Context) {
     /**
      * Activate premium subscription.
      */
-    fun activatePremium(paymentId: String, durationDays: Int = 365): Result<UserProfile> {
+    fun activatePremium(durationDays: Int = 365): Result<UserProfile> {
         val user = getCurrentUser() ?: return Result.failure(Exception("No user logged in"))
         
         val expiryDate = System.currentTimeMillis() + (durationDays * 24 * 60 * 60 * 1000L)

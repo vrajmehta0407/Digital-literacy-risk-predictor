@@ -6,6 +6,7 @@ import android.telephony.TelephonyManager
 import com.dlrp.app.core.AppInitializer
 
 
+@Suppress("DEPRECATION")
 class CallMonitor(private val context: Context) {
 
     private val telephonyManager = context.getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager
